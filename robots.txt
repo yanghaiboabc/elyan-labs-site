@@ -1,5 +1,9 @@
+# robots.txt for elyanlabs.ai
+
 User-agent: *
 Allow: /
+
+# Sitemap
 Sitemap: https://elyanlabs.ai/sitemap.xml
 
 # Allow major sections
