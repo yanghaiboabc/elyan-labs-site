@@ -399,6 +399,95 @@
 
 </div>
 
+
+
+  <!-- Compression Libraries -->
+  <div class="section-label">Compression Libraries</div>
+
+  <div class="pr-card">
+    <div class="pr-icon merged">PR</div>
+    <div class="pr-body">
+      <h3><a href="https://github.com/Blosc/c-blosc2/pull/723">#723</a> — VSX shuffle on ppc64 big-endian</h3>
+      <div class="pr-repo">Blosc/c-blosc2</div>
+      <div class="pr-desc">Fixes #702 — enables VSX-accelerated shuffle/bitshuffle paths on big-endian PowerPC (ppc64) with proper CMake detection. Compression library behind pandas, zarr, PyTables.</div>
+      <div class="pr-tags">
+        <span class="tag">Blosc</span>
+        <span class="tag">POWER8</span>
+        <span class="tag">VSX</span>
+        <span class="tag">Compression</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pr-card">
+    <div class="pr-icon merged">PR</div>
+    <div class="pr-body">
+      <h3><a href="https://github.com/Blosc/c-blosc2/pull/725">#725</a> — Fix missing pa_ variable in sw32_ bswap fallback</h3>
+      <div class="pr-repo">Blosc/c-blosc2</div>
+      <div class="pr-desc">Fixes #724 — fixes non-builtin byte-swap fallback that uses undeclared pa_ variable. Breaks compilation without __builtin_bswap32 or _byteswap_ulong.</div>
+      <div class="pr-tags">
+        <span class="tag">Blosc</span>
+        <span class="tag">Bug Fix</span>
+        <span class="tag">PowerPC</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Security & Formal Verification -->
+  <div class="section-label">Security &amp; Formal Verification</div>
+
+  <div class="pr-card">
+    <div class="pr-icon merged">PR</div>
+    <div class="pr-body">
+      <h3><a href="https://github.com/project-everest/hacl-star/pull/1068">#1068</a> — Fix AltiVec bool keyword conflict on PowerPC (GCC)</h3>
+      <div class="pr-repo">project-everest/hacl-star</div>
+      <div class="pr-desc">Fixes #1067 — GCC's AltiVec extension redefines bool as __vector __bool int when altivec.h is included. This broke all scalar bool usage in HACL* (Microsoft's formal-verified crypto library).</div>
+      <div class="pr-tags">
+        <span class="tag">HACL*</span>
+        <span class="tag">AltiVec</span>
+        <span class="tag">Formal Verification</span>
+        <span class="tag">Cryptography</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Python Ecosystem -->
+  <div class="section-label">Python Ecosystem</div>
+
+  <div class="pr-card">
+    <div class="pr-icon open">PR</div>
+    <div class="pr-body">
+      <h3><a href="https://github.com/python/cpython/pull/146118">#146118</a> — Enable HACL BLAKE2 SIMD128 vectorization on PowerPC64</h3>
+      <div class="pr-repo">python/cpython</div>
+      <div class="pr-desc">Enables SIMD128-optimized BLAKE2 hash implementation on POWER8/PowerPC64. BLAKE2 is used in Python's hashlib module for faster hashing performance on IBM POWER systems.</div>
+      <div class="pr-tags">
+        <span class="tag">CPython</span>
+        <span class="tag">BLAKE2</span>
+        <span class="tag">POWER8</span>
+        <span class="tag">Awaiting Review</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reverse Engineering -->
+  <div class="section-label">Reverse Engineering &amp; Security Tools</div>
+
+  <div class="pr-card">
+    <div class="pr-icon open">PR</div>
+    <div class="pr-body">
+      <h3><a href="https://github.com/NSA-Ghidra/Ghidra/pull/9036">#9036</a> — e200 VLE PowerPC reverse engineering support</h3>
+      <div class="pr-repo">NSA-Ghidra/Ghidra</div>
+      <div class="pr-desc">Adds Variable Length Encoding (VLE) instruction support for PowerPC e200 processor core. Enables accurate disassembly and analysis of VLE-encoded code in embedded systems and automotive ECUs.</div>
+      <div class="pr-tags">
+        <span class="tag">Ghidra</span>
+        <span class="tag">PowerPC e200</span>
+        <span class="tag">VLE</span>
+        <span class="tag">Disassembly</span>
+        <span class="tag">Awaiting Review</span>
+      </div>
+    </div>
+  </div>
+
 <footer>
   <p>Elyan Labs &middot; We fix what we use</p>
   <p style="margin-top: 8px; font-size: 0.8em;"><a href="https://github.com/Scottcjn">github.com/Scottcjn</a> &middot; <a href="index.html">Back to home</a></p>
